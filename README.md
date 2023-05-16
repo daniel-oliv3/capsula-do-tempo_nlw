@@ -280,6 +280,8 @@
 
 **NodeJS**
 
+- Criar a pasta `server` 
+
 - Instalar o NodeJS (LTS)
     - Node: https://nodejs.org/en
 
@@ -325,6 +327,128 @@ npm i tsx -D
 ```
 npx tsx src/server.ts
 ```
+
+- alterar `package.json`
+```json
+"scripts": {
+  "dev": "tsx watch src/server.ts"
+},
+```
+
+- Rodar o projeto
+```
+npm run dev
+```
+
+
+### Framework
+
+**Fastify**
+
+- Instalar o fastify
+```
+npm i fastify
+```
+
+**HTTP Method**
+
+- Get
+- Post
+- Put
+- Patch
+- Delete
+
+
+
+
+**Postman**
+  - Site: https://www.postman.com/
+
+**Insomnia**
+  - Site: https://insomnia.rest/
+
+**Hoppscotch**
+  - Site: https://hoppscotch.io/
+
+**HTTPie**
+  - Site: https://httpie.io/
+
+
+
+**ESLint**
+  - Site: https://eslint.org/
+
+- Instalar o ESLint
+```
+npm install eslint -D
+```
+
+- Init
+```
+npx eslint --int
+```
+
+- ou
+```
+npm i @rocketseat/eslint-config -D
+```
+
+- Criar o arquivo `.eslintrc.json` na raiz do projeto
+- Colar o trecho de no arquivo `.eslintrc.json`
+```json
+//.eslintrc.json
+
+{
+    "extends": [
+        "@rocketseat/eslint-config/node"
+    ]
+}
+```
+
+- Adicionar trecho de código no arquivo `package.json`
+
+```json
+//`package.json`
+
+"scripts": {
+    "lint": "eslint src --ext .ts --fix"
+  },
+```
+
+- Executa o processo (erros)
+```
+npm run lint
+```
+
+
+### Banco de Dados
+
+**Prisma**
+  - Site: https://www.prisma.io/
+
+- Instalar o prisma
+```
+npm i prisma -D
+```
+
+- Help
+```
+npx prisma -h
+```
+
+- Prisma Init
+```
+npx prisma init --datasource-provider SQLite
+```
+
+**SQLite**
+  - Site:? https://sqlite.org/index.html
+
+
+
+
+
+
 
 
 
