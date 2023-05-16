@@ -3,6 +3,9 @@
 ##
 
 
+### 1 - Iniciando o projeto de ponta a ponta
+
+
 **Sua Cápsula do Tempo**
 
 
@@ -265,9 +268,63 @@
 }
 ```
 
+- Fonts
+    - Fonte: https://www.jetbrains.com/pt-br/lp/mono/
 
 
 
+### Backend
+
+
+**Criação do projeto Backend**
+
+**NodeJS**
+
+- Instalar o NodeJS (LTS)
+    - Node: https://nodejs.org/en
+
+- Verificar a versão instalada do node
+```
+npm -v
+```
+
+- Cria o projeto JS `package.json`
+```
+npm init -y
+```
+
+**TypeScript**
+
+- Instala o TypeScript `node_modules` `package-lock.json`
+```
+npm i typescript -D
+```
+
+- Types/Node
+```
+npm i @types/node -D
+```
+
+- Executar o TS `tsconfig.json`
+```
+npx tsc --init
+```
+
+- alterar `tsconfig.json`
+```json
+/* Language and Environment */
+"target": "es2020",  
+```
+
+- Tsx
+```
+npm i tsx -D
+```
+
+- Rodar o projeto
+```
+npx tsx src/server.ts
+```
 
 
 
